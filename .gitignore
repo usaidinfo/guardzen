@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Tailwind CSS
+.postcssrc.js
+tailwind.config.js
+
+# Optional: If you use Next.js or other frameworks, add their build folders here
+
+# Lock files (optional, if using only one package manager)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
