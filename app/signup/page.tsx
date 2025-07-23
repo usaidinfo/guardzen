@@ -1,13 +1,15 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
 import { useAuth } from '@/components/AuthProvider';
 import InputField from '@/components/ui/InputField';
+
+export const dynamic = 'force-dynamic';
 
 export default function SignupPage() {
   const [formData, setFormData] = useState({
@@ -20,7 +22,16 @@ export default function SignupPage() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [mounted, setMounted] = useState(false);
   
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div>Loading...</div>;
+  }
+
   const { signup } = useAuth();
   const router = useRouter();
 
@@ -197,3 +208,4 @@ export default function SignupPage() {
     </div>
   );
 }
+

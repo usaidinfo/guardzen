@@ -9,6 +9,8 @@ import { Shield } from 'lucide-react';
 import { useAuth } from '@/components/AuthProvider';
 import InputField from '@/components/ui/InputField';
 
+export const dynamic = 'force-dynamic';
+
 export default function LoginPage() {
   const [formData, setFormData] = useState({
     email: '',
@@ -147,3 +149,4 @@ export default function LoginPage() {
     </div>
   );
 }
+

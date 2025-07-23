@@ -25,6 +25,7 @@ Thumbs.db
 
 # TypeScript cache
 *.tsbuildinfo
+.next
 
 # Tailwind CSS
 .postcssrc.js

@@ -1,8 +1,13 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/cart/page": "app/cart/page.js",
   "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
   "/faq/page": "app/faq/page.js",
+  "/contact/page": "app/contact/page.js",
   "/track-order/page": "app/track-order/page.js",
   "/products/page": "app/products/page.js",
-  "/cart/page": "app/cart/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/login/page": "app/login/page.js",
+  "/signup/page": "app/signup/page.js"
 }
